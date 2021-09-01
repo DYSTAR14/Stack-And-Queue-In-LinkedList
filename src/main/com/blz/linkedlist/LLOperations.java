@@ -33,7 +33,7 @@ public class LLOperations<K> {
 			temp.next = newNode;
 			System.out.println("Enter Value at End:" + newNode.data);
 		}
-		return myList;	
+		return myList;
 	}
 	
 	public LLOperations<K> addAtNthPos(LLOperations<K> list,K data,int pos) {
