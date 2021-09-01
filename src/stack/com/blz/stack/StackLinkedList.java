@@ -25,6 +25,14 @@ public class StackLinkedList {
 				System.out.println("Enter Value");
 				list.addLast(list, SC.nextInt());
 				break;
+			case 2:
+				System.out.println("Enter Value");
+				list.deleteLast(list);
+				break;
+			case 3:
+				System.out.println("Enter Value");
+				list.peek(list);
+				break;
 			case 4:
 				list.display(list);
 				break;

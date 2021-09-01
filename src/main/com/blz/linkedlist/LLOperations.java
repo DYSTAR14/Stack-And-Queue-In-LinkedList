@@ -75,6 +75,7 @@ public class LLOperations<K> {
 			last = temp;
 			temp = temp.next;
 		}
+		System.out.println(temp.data);
 		last.next = null;
 		return list;
 	}
@@ -118,6 +119,18 @@ public class LLOperations<K> {
 			myListDisplay.add(temp.data);
 		}
 		return myListDisplay;
+	}
+	
+	public void peek(LLOperations<K> myList) {
+		if (head == null) {
+			System.out.println("List is Empty");
+		} else {
+			Node<K> temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			System.out.println(temp.data);
+		}
 	}
 
 
