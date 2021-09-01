@@ -11,8 +11,8 @@ public class QueueLinkedList {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Queue World");
-		System.out.println("1.Queue\n2.DeQueue" + 
-		"3.Display Stack\n0.Exit");
+		System.out.println("1.EnQueue\n2.DeQueue\n" + 
+		"3.Display Queue\n0.Exit");
 		int exit = 1;
 		while (exit != 0) {
 			System.out.println("Select From Option");
@@ -25,6 +25,9 @@ public class QueueLinkedList {
 			case 1:
 				System.out.println("Enter Value");
 				list.addLast(list, SC.nextInt());
+				break;
+			case 2:
+				list.deleteFirst(list);
 				break;
 			case 3:
 				list.display(list);
